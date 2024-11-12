@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven_Local' // Ensure the name is correct
+        maven 'maven3' // Ensure the name is correct
     }
 
     stages {
