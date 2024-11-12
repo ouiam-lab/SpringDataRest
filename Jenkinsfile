@@ -28,9 +28,9 @@ pipeline {
                     withSonarQubeEnv('SonarQube') { // Ensure 'SonarQube' matches Jenkins config
                         bat """
                             "${scannerHome}\\bin\\sonar-scanner.bat" ^
-                            -Dsonar.projectKey=spring_sonar ^
+                            -Dsonar.projectKey=ouiam ^
                             -Dsonar.host.url=http://localhost:9000 ^
-                            -Dsonar.login=sqp_87e73499757d28c6c0a6e6321a52d591e7b166db ^
+                            -Dsonar.login=sqp_7b723ce2f82ef1574adab29a3dd460253ad4cb82 ^
                             -Dsonar.sources=./src ^
                             -Dsonar.java.binaries=./target/classes
                         """
